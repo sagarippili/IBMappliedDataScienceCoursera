@@ -1,0 +1,592 @@
+
+<!-- saved from url=(0011)about:blank -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><link href="https://fast.appcues.com/generic/main/4.8.5/tooltip.40a6b605d29a66b083aa6d74c07bb73eae19e31b.css" type="text/css" rel="stylesheet"><style class="appcues-global-styling">
+      @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,600&subset=cyrillic,cyrillic-ext,greek,latin-ext,vietnamese');
+      
+
+.appcues-actions-right > .appcues-button.appcues-button-success, .appcues-progress-bar-success {
+    background-color: #3d70b2;
+}
+.appcues-actions-right > .appcues-button.appcues-button-success:hover {
+    background-color: #5082c3;
+}
+
+
+.appcues-actions-right .appcues-button {
+    color: #ffffff;
+}
+
+
+.appcues-actions-right .appcues-button:hover {
+    color: #ffffff !important;
+}
+
+
+.appcues-actions-left >  .appcues-button {
+    background-color: #cdd1d4;
+}
+.appcues-actions-left > .appcues-button:hover {
+    background-color: #e0e3e4;
+}
+
+
+.appcues-actions-right .appcues-button, .appcues-actions-left .appcues-button {
+    border-radius: 3px;
+}
+
+
+body, appcues cue, .tooltip .content {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+body h1, body h2, body h3, body h4, body h5,
+appcues cue h1, appcues cue h2, appcues cue h3, appcues cue h4, appcues cue h5,
+.tooltip .content h1, .tooltip .content h2, .tooltip .content h3, .tooltip .content h4, .tooltip .content h5 {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+  body, appcues cue, .tooltip .content {
+      color: #152935;
+  }
+  
+
+.tooltip .content .panel {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.tooltip .content .panel:before, .tooltip .content .panel:after {
+  height: 13px;
+  width: 13px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  border: none;
+  transform: rotate(45deg);
+}
+
+.tooltip .content .panel:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+}
+
+.tooltip .content.content-top .panel:before, .tooltip .content.content-top .panel:after {
+  margin-left: -7px;
+}
+
+.tooltip .content.content-top .panel:before,
+.tooltip .content.content-top .panel:after,
+.tooltip .content.content-top-left .panel:before,
+.tooltip .content.content-top-left .panel:after,
+.tooltip .content.content-top-right .panel:before,
+.tooltip .content.content-top-right .panel:after {
+  margin-top: -6px;
+}
+
+.tooltip .content.content-bottom .panel:before, .tooltip .content.content-bottom .panel:after {
+  margin-left: -7px;
+}
+
+.tooltip .content.content-bottom .panel:before,
+.tooltip .content.content-bottom .panel:after,
+.tooltip .content.content-bottom-left .panel:before,
+.tooltip .content.content-bottom-left .panel:after,
+.tooltip .content.content-bottom-right .panel:before,
+.tooltip .content.content-bottom-right .panel:after {
+  margin-bottom: -6px;
+}
+
+.tooltip .content.content-right .panel:before, .tooltip .content.content-right .panel:after {
+  margin-top: -7px;
+}
+
+.tooltip .content.content-right .panel:before,
+.tooltip .content.content-right .panel:after,
+.tooltip .content.content-right-top .panel:before,
+.tooltip .content.content-right-top .panel:after,
+.tooltip .content.content-right-bottom .panel:before,
+.tooltip .content.content-right-bottom .panel:after {
+  margin-right: -6px;
+}
+
+.tooltip .content.content-left .panel:before, .tooltip .content.content-left .panel:after {
+  margin-top: -7px;
+}
+
+.tooltip .content.content-left .panel:before,
+.tooltip .content.content-left .panel:after,
+.tooltip .content.content-left-top .panel:before,
+.tooltip .content.content-left-top .panel:after,
+.tooltip .content.content-left-bottom .panel:before,
+.tooltip .content.content-left-bottom .panel:after {
+  margin-left: -6px;
+}
+
+.tooltip .content.content-top-left .panel:before,
+.tooltip .content.content-top-left .panel:after,
+.tooltip .content.content-bottom-left .panel:before,
+.tooltip .content.content-bottom-left .panel:after {
+  right: 10px;
+}
+
+.tooltip .content.content-top-right.panel:before,
+.tooltip .content.content-top-right .panel:after,
+.tooltip .content.content-bottom-right .panel:before,
+.tooltip .content.content-bottom-right .panel:after {
+  left: 10px;
+}
+
+.tooltip .content.content-right-bottom .panel:before,
+.tooltip .content.content-right-bottom .panel:after,
+.tooltip .content.content-left-bottom .panel:before,
+.tooltip .content.content-left-bottom .panel:after {
+  top: 10px;
+}
+
+.tooltip .content.content-right-top.panel:before,
+.tooltip .content.content-right-top .panel:after,
+.tooltip .content.content-left-top .panel:before,
+.tooltip .content.content-left-top .panel:after {
+  bottom: 10px;
+}
+
+.tooltip .content.content-top .panel:after {
+  left: 50%;
+}
+
+.tooltip .content.content-top .panel:after,
+.tooltip .content.content-top-left .panel:after,
+.tooltip .content.content-top-right .panel:after {
+  top: 100%;
+}
+
+.tooltip .content.content-bottom .panel:after {
+  left: 50%;
+}
+
+.tooltip .content.content-bottom .panel:after,
+.tooltip .content.content-bottom-left .panel:after,
+.tooltip .content.content-bottom-right .panel:after {
+  bottom: 100%;
+}
+
+.tooltip .content.content-right .panel:after {
+  top: 50%;
+}
+
+.tooltip .content.content-right .panel:after,
+.tooltip .content.content-right-top .panel:after,
+.tooltip .content.content-right-bottom .panel:after {
+  right: 100%;
+}
+
+.tooltip .content.content-left .panel:after {
+  top: 50%;
+}
+
+.tooltip .content.content-left .panel:after,
+.tooltip .content.content-left-top .panel:after,
+.tooltip .content.content-left-bottom .panel:after {
+  left: 100%;
+}
+
+
+.tooltip .content .panel {
+  color: #152935;
+}
+
+.tooltip h1, .tooltip h2, .tooltip h3, .tooltip h4, .tooltip h5 {
+color: #152935;
+}
+
+  .panel.panel-default {
+    margin-right: 3px;
+    margin-bottom: 2px;
+    border-radius: 0px;
+  }
+  
+
+  .panel.panel-default, .content .panel:after {
+    box-shadow: 1px 1px 2px hsla(0,0%,13%,.6);
+  }
+  
+
+      .appcues-backdrop[data-pattern-type=left], .appcues-backdrop[data-pattern-type=shorty], .appcues-backdrop[data-pattern-type=modal] {
+        background-color: #dfe3e6;
+      }
+      
+
+      .appcues-backdrop[data-pattern-type=left], .appcues-backdrop[data-pattern-type=shorty], .appcues-backdrop[data-pattern-type=modal] {
+        opacity: 0.55;
+      }
+      
+
+appcues cue {
+    background: #ffffff
+}
+
+
+appcues cue * {
+    color: #152935
+}
+
+
+/************************************/
+/* Appcues Base Presets */
+
+/*** Remove next/previous arrows */
+appcues .appcues-actions-right .appcues-button {
+    padding-right: 18px;
+    position: relative;
+}
+appcues .appcues-actions-right .appcues-button:after {
+    content: none; }
+appcues .appcues-actions-left .appcues-button {
+    padding-left: 18px; }
+appcues .appcues-actions-left .appcues-button:before {
+    content: none; }
+
+/*** Adjust style of progress bar */
+
+appcues .appcues-progress {
+  background-color:#DFE3E6;
+  height: 4px;
+  border: 0;
+}
+appcues .appcues-progress .appcues-progress-bar { 
+    background-color: #3D70B2;
+    height:4px;
+    max-width:550px;
+    transition:width 0.5s ease 0.07s; }
+appcues .appcues-progress .appcues-progress-bar:not([aria-valuenow='100']) { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+
+/*** Adjust margins & padding */
+appcues cue { 
+    min-height: 100px !important; 
+    padding-top:48px;
+}
+appcues cue .apc-hero { 
+    margin: -22px -54px 0; }
+/* Fix up Hero typography */
+appcues cue .apc-hero h2 { 
+    font-size: 18px;
+    font-weight: bold; }
+appcues[data-pattern-type=modal] cue {
+    box-shadow: 0 0 18px rgba(0,0,0,0.25);
+}
+.tooltip .panel { padding: 16px 16px 16px; }
+
+/*** Adjust typography */
+/***    IBM notes:
+        Modals
+        H1 - header
+        H2 - body
+        H3 - counter (1of3)
+        Tooltips
+        H1 - header
+        H2 - body
+        H3 - counter (1of3)
+*/
+appcues cue h1 { 
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 1.25em;
+    color: #5a6872;
+    margin-top: 0.5em; 
+    -webkit-font-smoothing:antialiased; }
+appcues cue h2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #152935;
+    margin-top: 0em; 
+    -webkit-font-smoothing:antialiased; }
+appcues cue h3 {
+    font-weight: 400;
+    letter-spacing: .01em;
+    font-size: 14px;
+    line-height: 1.25em;
+    color: #5a6872;
+    margin-top: 2em; 
+    text-transform: none;
+    -webkit-font-smoothing:antialiased; }
+
+.tooltip h1 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3em;
+    color: #152935;
+    margin-top: 0.25em; 
+    -webkit-font-smoothing:antialiased; }
+.tooltip h2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3em;
+    color: #5A6872;
+    margin-top: 0em;
+    -webkit-font-smoothing:antialiased; }
+.tooltip h3 {
+    font-weight: 400;
+    letter-spacing: .01em;
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #5a6872;
+    margin-top: 0em; 
+    text-transform: none;
+    -webkit-font-smoothing:antialiased; }
+
+/*** Adjust links in content */
+appcues cue section a[data-step], appcues cue section a[href], .tooltip p a[data-step], .tooltip p a[href], .tooltip h2 a[href] {
+    color: #3D70B2;
+    text-decoration: underline;
+    font-weight: 600;
+}
+appcues cue section a[data-step]:hover, appcues cue section a[href]:hover, .tooltip p a[data-step]:hover, .tooltip p a[href]:hover, .tooltip h2 a[href]:hover {
+    color: #30588C;
+    text-decoration: underline;
+    font-weight: 600;
+/* a18y */
+}
+
+/*** Adjust skip X */
+appcues .appcues-skip a {
+    background: none;
+    color:#5A6872;
+    opacity:1;
+    padding: 16px 16px 0px 0px;
+    font-size: 24px; 
+}
+.panel .panel-content .exit-tooltip{
+    color: #5A6872;
+    opacity:1;
+}
+
+/* End Appcues Base */
+/************************************/
+
+/*___Buttons and Links___*/
+.appcues-actions-right {
+	/*[The section of the button row which hold the 'Next' or righthand side button.]*/
+}
+
+.tooltip .content .panel .panel-content-actions .appcues-actions-right {
+	/*[Full selector to edit .appcues-actions-right in hotspots/tooltips]*/
+}
+
+appcues cue .appcues-actions-right {
+	/*[Full selector to edit .appcues-actions-right in modals/slideouts]*/
+}
+
+.appcues-actions-left > .appcues-button{
+    background-color: #F4F7FB;
+	color: #3D70B2;
+	border: 2px solid #3D70B2;
+	transition: all 0.2s ease;
+}
+
+.appcues-actions-left > .appcues-button:hover{
+    background-color: #3D70B2;
+	color: #FFFFFF;
+}
+
+.appcues-actions-left{
+	/*[The section of the button row which hold the 'Prev' or lefthand side button.]*/
+}
+
+.tooltip .content .panel .panel-content-actions .appcues-actions-left {
+	/*[Full selector to edit .appcues-actions-left in hotspots/tooltips]*/
+}
+
+appcues cue .appcues-actions-left {
+	/*[Full selector to edit .appcues-actions-left in modals/slideouts]*/
+}
+
+
+.appcues-button {
+	/*[Generic selector for any button.]*/
+}
+
+
+.appcues-button-success {
+	/*[Selector for the 'Next' buttons (buttons which advance the step of the flow).]*/
+}
+
+.panel .panel-content-actions .appcues-actions-right > .appcues-button.appcues-button-success {
+	/*[Full selector to edit .appcues-button-success in hotspots/tooltips]*/
+}
+
+appcues cue .appcues-actions-right > .appcues-button.appcues-button-success {
+	/*[Full selector to edit .appcues-button-success in modals/slideouts]*/
+	border: 2px solid #3D70B2;
+	transition: all 0.2s ease;
+}
+
+appcues cue .appcues-actions-right > .appcues-button.appcues-button-success:hover {
+	/*[Full selector to edit .appcues-button-success in modals/slideouts]*/
+	border: 2px solid #5082C3;
+}
+
+.panel .panel-content-actions .appcues-skip {
+	/*[Full selector to edit .appcues-skip in tooltips/hotspots] (Hide these tips)*/
+}
+
+appcues .appcues-skip {
+	/*[Full selector to edit .appcues-skip in modals/slideouts] (X button to close)*/
+	max-width:550px;
+}
+
+
+appcues[data-pattern-type=shorty] cue {
+	/*[Selector for slideouts specifically]*/
+}
+
+appcues[data-pattern-type=modal] cue {
+	/*[Selector for modals specifically]*/
+	max-width:550px;
+
+}
+
+
+/*___Modals and Slideouts___*/
+
+appcues {	
+	/*[This element wraps the entire modal or slideout.]*/
+}
+
+appcues cue {
+	/*[This is where the main content for modals and slideouts lives.]*/
+		padding: 100px 48px 148px 48px;
+		background-color: white;
+		
+}
+
+appcues .appcues-backdrop[data-pattern-type=modal] {
+	/*[The backdrop (darkened background) for modals.]*/
+}
+
+appcues .appcues-progress {
+	/*[The progress bar which indicates how far a user is in the flow]*/
+}
+
+appcues cue .apc-hero {
+	/*[This is the selector for a hero image.]*/
+}
+
+
+appcues cue .appcues-actions { 
+    background-color: #f4f7fb;
+    width: 100%;
+    height:88px;
+    padding: 24px 48px;
+	/*[The row where all the buttons are placed.]*/
+}
+
+.footer-container{
+    display:flex;
+    justify-content: flex-end;
+    background: #F4F7FB;
+    align-items: center;
+    width:100%;
+    height:88px;
+    padding-left:0 34px 0 34px;
+}
+
+.footer-container div{
+    display:flex;
+    align-items:center;
+    margin-right:16px;
+    height:40px;
+    width:auto;
+    padding: 0 16px 0 16px;
+    border:2px solid #3D70B2;
+    font-weight:600;
+}
+
+
+
+/*___Hotspots and Tooltips___*/
+
+.tooltip .content .panel {
+	/*[This is selector for the tooltip panel itself. The styles to the arrow can be accessed using the ::before selector (see below)]*/
+}
+
+.tooltip .content .panel .panel-content {
+	/*[This is the selector for any content within the tooltip. This applies to both body text and the actions row.]*/
+	padding: 0px;
+}
+
+.tooltip .content .panel .panel-content-actions {
+	/*[The specific container selection for the row with buttons/actions.]*/
+}
+
+appcues[data-pattern-type=modal] {
+    padding-top: 8%; 
+    /* Adjust based on how far you want it from the top of the page */
+}
+
+appcues-layer .apc-spotlight {
+    borderImage: 'radial-gradient(transparent 2%, rgba(244, 247, 251, 0.75) 28%) 49% 49% 49% 49%' !important;}
+    
+.appcues-button {
+    text-align:center;
+    margin-top:24px;
+    float:right;
+    border-radius:0%;
+    height:32px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 0px 18px;
+
+      /* this styling controls the buttons for all the appcues buttons */
+}
+
+.appcues-button.primary {
+    background-color:#3D70B2;
+}
+
+.appcues-button.primary:hover {
+    background-color: #30588C;
+    color: white;
+}
+
+.appcues-button.secondary {
+    background-color:white;
+    color:#3D70B2;
+    outline:2px 
+    solid #3D70B2;
+    outline-offset:-2px;
+    margin-right:16px;
+}
+
+.appcues-button.secondary:hover {
+    background-color: #3D70B2;
+    color: white;
+}
+
+appcues[data-pattern-type=modal] .appcues-button {
+        height:40px;
+        margin-top: 0px;
+           /* this styling overrides the styling for 'all the appcues buttons' so we can have larger 40px size buttons fro the modals */
+}
+
+.tooltip {
+width: 300px;
+}
+
+.tooltip .panel.panel-default {
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+border: 1px solid #dfe3e6;
+}
+
+a.appcues-button {
+padding: 0px 18px !important;
+}
+
+
+    appcues .appcues-actions-right .appcues-button { padding-right: 18px; }
+    appcues .appcues-actions-right .appcues-button:after { content: none; }
+    appcues .appcues-actions-left .appcues-button { padding-left: 18px; }
+    appcues .appcues-actions-left .appcues-button:before { content: none; }</style><div class="tooltip"><div class="content content-bottom-left"><div class="panel panel-default"><div class="panel-content"><div class="canvas"> <div class="row-container"> <div class="row" style="display: inline-block; width: 100%;"> <div class="zone-container" style="display: inline-block; width: 100%; float: left;"> <div class="zone"> <div class="zone-content"> <div class="rich-text"><style>.rich-text strong{color:inherit !important;}</style><div><h1>Want to view the environment?</h1></div></div> </div> </div> </div> </div> </div> <div class="row-container"> <div class="row" style="display: inline-block; width: 100%;"> <div class="zone-container" style="display: inline-block; width: 100%; float: left;"> <div class="zone"> <div class="zone-content"> <div class="rich-text"><style>.rich-text strong{color:inherit !important;}</style><div><h2>This tour guides you through viewing information about the environment the notebook runs in.</h2></div></div> </div> </div> </div> </div> </div> <div class="row-container"> <div class="row" style="display: inline-block; width: 100%;"> <div class="zone-container" style="display: inline-block; width: 100%; float: left;"> <div class="zone"> <div class="zone-content"> <div class="rich-text"><style>.rich-text strong{color:inherit !important;}</style><div><h3>3 steps</h3></div></div> </div> </div> </div> </div> </div> <div class="row-container"> <div class="row" style="display: inline-block; width: 100%;"> <div class="zone-container" style="display: inline-block; width: 100%; float: left;"> <div class="zone"> <div class="zone-content"> <div class="html"><a class="primary appcues-button-success appcues-button" data-step="end-flow" onclick="window.parent.Appcues.show(&#39;-LkQJfmX3ZhddRQbA7Yv&#39;)" data-field-id="5c7df82d-e165-4f08-9f98-ef7c922dcd2c" target="_parent" style="text-align: center; padding: 8px 18px;">Show me</a> <a class="secondary appcues-button-success appcues-button" data-step="skip" data-field-id="529e41b5-62db-4df9-afd1-ecf55c31bd3c" target="_parent" style="text-align: center; padding: 8px 18px;">No, thanks</a></div> </div> </div> </div> </div> </div> </div></div></div></div></div></body></html>
